@@ -27,7 +27,7 @@ const Header = () => {
         {/* logo */}
         <div className="order-0 -mt-1 flex items-center  ">
           <Image src={logo} width={50} height={20}  className="my-2" />
-          <p className=" hidden md:block text-lg px-4 p-2  font-semibold text-orange-400"> Sahaj Spirit</p>
+          <p className="  md:block text-lg px-4 p-2  font-semibold text-orange-400"> Sahaj Spirit</p>
         </div>
 
         {/* navbar toggler */}

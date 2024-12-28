@@ -82,7 +82,7 @@ const ref_id=generateHash();
             alert('Failed to create payment link');
           }) 
           .finally (()=>{
-            setLoading(false);
+            setLoading(true);
           }
           )
         
@@ -113,17 +113,17 @@ const ref_id=generateHash();
       <div className="container">
           <div className="relative mx-auto mt-20 mb-20 max-w-screen-lg overflow-hidden rounded-t-xl bg-emerald-400/80 py-9 text-center shadow-xl shadow-gray-300">
               <h1 className=" px-8 py-5 text-3xl font-bold text-white md:text-5xl">Book Event</h1>
-              <p className="mt-2 text-lg font-bold text-white">Event Name :<span className='text-orange-500 font-black text-2xl'>&nbsp; SAHAJ SUMMIT</span></p>
-              <p className="mt-2 text-lg font-bold text-white">Event organizers :<span className='text-orange-500 font-black text-2xl'>&nbsp; SAHAJ SPIRIT </span></p>
-              <p className="mt-2 text-lg font-bold text-white">Event duration :<span className='text-orange-500 font-black text-2xl'>&nbsp; 6hrs 1-7PM</span></p>
-              <p className="mt-2 text-lg font-bold text-white">Day :<span className='text-orange-500 font-black text-2xl'>&nbsp; Sunday</span></p>
-              <p className="mt-2 text-lg font-bold text-white">Date :<span className='text-orange-500 font-black text-2xl'>&nbsp; 27 Feb 2025</span></p>
-              <p className="mt-2 text-lg font-bold text-white">Venue :<span className='text-orange-500 font-black text-2xl'>&nbsp;Satya Sai auditorium, Lodhi Rd, Pragati Vihar, New Delhi, Delhi 110003</span></p>
+              <p className="mt-2 text-sm lg:text-lg font-bold text-white">Event Name :<span className='text-orange-500 font-black text-sm lg:text-2xl'>&nbsp; SAHAJ SUMMIT</span></p>
+              <p className="mt-2 text-sm lg:text-lg font-bold text-white">Event organizers :<span className='text-orange-500  text-sm font-black lg:text-2xl'>&nbsp; SAHAJ SPIRIT </span></p>
+              <p className="mt-2 text-sm lg:text-lg font-bold text-white">Event duration :<span className='text-orange-500  text-sm font-black lg:text-2xl'>&nbsp; 6hrs 1-7PM</span></p>
+              <p className="mt-2 text-sm lgtext-lg font-bold text-white">Day :<span className='text-orange-500 font-black   text-sm lg:text-2xl'>&nbsp; Sunday</span></p>
+              <p className="mt-2 text-sm lg:text-lg font-bold text-white">Date :<span className='text-orange-500 font-black text-sm lg:text-2xl'>&nbsp; 27 Feb 2025</span></p>
+              <p className="mt-2 text-sm lg:text-lg font-bold text-white">Venue :<span className='text-orange-500 font-black  text-sm lg:text-2xl'>&nbsp;Satya Sai auditorium, Lodhi Rd, Pragati Vihar, New Delhi, Delhi 110003</span></p>
 
               <img className="absolute top-0 left-0 -z-10 h-full w-full object-cover" src="https://images.unsplash.com/photo-1504672281656-e4981d70414b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
           </div>
 <form>
-          <div className="mx-auto grid grid-cols-2 gap-4  max-w-screen-lg px-6 pb-20">
+          <div className="mx-auto grid lg:grid-cols-2 gap-4  max-w-screen-lg px-6 pb-20">
      
     
           <div className="mb-5">
