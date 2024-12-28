@@ -5,7 +5,7 @@ banner:
   image: /images/DSC03791.JPG
   button:
     label: "Contact Us"
-    link: "/contact"
+    link: "/Bookings"
 
 # feature
 feature: 
@@ -45,7 +45,7 @@ services:
     button:
       enable: true
       label: Discover more
-      link: /contact
+      link: /Bookings
 
   - title: "Equipping Youth With Tools for Success"
     content: "Through tailored workshops, hands-on training, and creative learning opportunities, we empower the next generation with the skills they need to excel—both personally and professionally."    images: 
@@ -53,7 +53,7 @@ services:
     button:
       enable: true
       label: Find out more
-      link: /contact
+      link: /Bookings
   
   - title: "Celebrating Culture and Diversity"
     content: "Our cultural events celebrate the richness of traditions and talents across communities, building bridges of understanding and appreciation for diversity"  
@@ -66,7 +66,7 @@ services:
     button:
       enable: true
       label: Check it out
-      link: /contact
+      link: /Bookings
 
   - title: "Inspiring Change Through Volunteerism"
     content: "Sahaj Spirit Trust encourages youth to step forward and make a difference. Our volunteer programs provide the perfect opportunity to give back to society while developing valuable skills and meaningful connections."    
@@ -77,7 +77,7 @@ services:
     button:
       enable: true
       label: Check it out
-      link: /contact
+      link: /Bookings
 
 # workflow
 workflow: 
@@ -92,6 +92,6 @@ call_to_action:
   image: '/images/cta.svg'
   button:
     enable: true
-    label: "Contact Us"
-    link: "/contact"
+    label: "Book Now"
+    link: "/Bookings"
 ---

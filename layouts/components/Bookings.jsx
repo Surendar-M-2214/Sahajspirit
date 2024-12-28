@@ -17,7 +17,7 @@ import { generateHash  } from 'random-hash';
         number:"",
 
       });
-var gender;
+let gender="Male";
       const handleInput = (e) => {
         console.log(e)
         const fieldName = e.target.name;
@@ -27,10 +27,9 @@ var gender;
           ...prevState,
           [fieldName]: fieldValue
         }));
-       gender=  e.target.__reactProps$sb2tr2lwrue.value;
+       gender=  e.target.__reactProps$sb2tr2lwrue.value==undefined?"Male":e.target.__reactProps$sb2tr2lwrue.value ;
 
       }
-
 
 
 
@@ -41,7 +40,7 @@ const ref_id=generateHash();
         // We don't want the page to refresh
         e.preventDefault()
     
-        const formURL = `${process.env.BASE_URL}/api/razor`
+        const formURL = `/api/razor`
         const data = new FormData()
     
         // Turn our formData state into data we can use with a form submission
@@ -59,10 +58,13 @@ const ref_id=generateHash();
     console.log(data.get("ref_id"))
         // POST the data to the URL of the form
         fetch(formURL, {
+          mode: 'cors',
           method: "POST",
           body: data,
           headers: {
             'accept': 'application/json',
+            'Access-Control-Allow-Origin':'*'
+            
           },
           
         }).then(async (res) => {
@@ -84,17 +86,20 @@ const ref_id=generateHash();
           }
           )
         
-          const creator= await  fetch(`api/creator`, {
+          await  fetch(`api/creator`, {
+            mode: 'cors',
             method: "POST",
             body: data,
             headers: {
               'accept': 'application/json',
+              'Access-Control-Allow-Origin':'*'
             }
           }
           ).then(async(rec)=>{
 
             const creator_resp= await rec.json()
             console.dir(creator_resp.result[0].data.ID,{depth:null})
+            return creator_resp.creator_resp.result[0].data.ID
           })
           
           
