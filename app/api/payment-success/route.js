@@ -30,7 +30,7 @@ console.log("in if")
             {
                 "Payment_Status":"Paid",
                 "Payment_ID":payment_id,
-                "Payment_Link_ID":razorpay_payment_link_id
+               
             },
             "skip_workflow": [
                 "form_workflow"

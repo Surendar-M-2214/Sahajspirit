@@ -48,8 +48,8 @@ console.log(fname+" "+" "+gender+" "+amount)
       callback_url: `${process.env.BASE_URL}/api/payment-success`,
   callback_method: "get"
     });
-console.log( paymentLink);
-    return new Response(JSON.stringify({ link: paymentLink.short_url }), { status: 200 });
+console.log( paymentLink.id);
+    return new Response(JSON.stringify({ link: paymentLink.short_url ,id:paymentLink.id}), { status: 200 });
   } catch (error) {
     console.error('Error creating payment link', error);
     return new Response(JSON.stringify({ error: 'Error creating payment link' }), { status: 500 });

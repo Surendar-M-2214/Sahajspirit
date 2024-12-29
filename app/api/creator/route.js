@@ -10,6 +10,7 @@ export  async function POST(req) {
   const number=formData.get("number");
   const gender=formData.get("gender");
   const ref_id=formData.get("ref_id");
+  const pay_id=formData.get("pay_id");
     const tkn = await fetch(`https://accounts.zoho.in/oauth/v2/token?refresh_token=${process.env.CR_REFRESH_TKN}&client_id=${process.env.CR_CLIENT_ID}&client_secret=${process.env.CR_CLIENT_SECRET}&grant_type=refresh_token`, {
         method: "POST",
        
@@ -30,7 +31,7 @@ export  async function POST(req) {
                 "FName":fname,
                 "Payment_Status":"Pending",
                 "Paid_Amount":amount,
-              
+                "Payment_Link_ID":pay_id,
             }
         ],
         "skip_workflow": [
