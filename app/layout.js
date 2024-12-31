@@ -5,7 +5,7 @@ import Footer from "@layouts/partials/Footer";
 import Header from "@layouts/partials/Header";
 import Providers from "@layouts/partials/Providers";
 import "../styles/style.scss";
-
+import { Analytics } from "@vercel/analytics/react"
 export const metadata = {
   title: "Sahaj Spirit",
   description: "Creater by Surendar",
