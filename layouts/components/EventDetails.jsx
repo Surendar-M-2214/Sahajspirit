@@ -3,14 +3,17 @@
 import React from "react";
 import Image from 'next/image';
 import logo from '../../public/images/logo.png'
+import event from '../../public/images/event.png'
 const EventDetails = () => {
   return (
     <div className="min-h-screen py-28  md:py-24  bg-gray-100 text-gray-800">
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
         <header className="bg-primary flex items-center justify-center space-x-10 text-white py-6 px-8">
             <Image src={logo} width={100} height={50} alt="logo" className="rounded-full" />
+       
           <h1 className="text-3xl font-bold text-white text-center">SAHAJ SUMMIT</h1>
         </header>
+        <Image src={event} width={500} height={50} alt="logo" className="rounded-lg mx-auto" />
         <div className="p-8">
           <section className="mb-8">
             <h2 className="text-2xl font-bold mb-2">Event Details</h2>

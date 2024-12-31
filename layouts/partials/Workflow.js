@@ -17,7 +17,7 @@ const Workflow = ({ workflow }) => {
       className="mx-auto h-1/2"
         src={workflow.image}
         alt="workflow image"
-        width={1920}
+        width={500}
         height={250}
       />
     </section>

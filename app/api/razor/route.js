@@ -2,22 +2,19 @@
 import Razorpay from 'razorpay';
 
 const razorpay = new Razorpay({
-  key_id:'rzp_live_pFlvTQTDProq99',
-  key_secret: '4KnIcSMA0i4iiOzLUmZhwWnX',
+  key_id:process.env.RAZ_KEY,
+  key_secret:process.env.RAZ_SECRET,
 });
 
 export async function POST(req) {
-  const formData = await req.formData()
-  console.log(formData)
-const name=formData.get("name");
-const email=formData.get("email");
-const amount=formData.get("amount");
-const address=formData.get("address");
-const fname=formData.get("fname");
-const number=formData.get("number");
-const gender=formData.get("gender");
-const ref_id=formData.get("ref_id");
-console.log(fname+" "+" "+gender+" "+amount)
+  const formData = await req.json();
+
+  const amount=formData.amount;
+const name=formData.Name;
+const email=formData.Email;
+
+const ref_id=formData.ref_id;
+console.log(formData)
   // Create Razorpay payment link
   try {
     const paymentLink =  await razorpay.paymentLink.create({
@@ -26,17 +23,13 @@ console.log(fname+" "+" "+gender+" "+amount)
       description: ' Sahaj Summit Event',
      customer: {
     name: name,
-    
     email: email
   },
   notes: {
     name:name,
     email:email,
-    address:address,
    amount:amount,
-    number:number,
-    fname:fname,
-    gender:gender
+    
   },
   reference_id:ref_id,
 

@@ -1,19 +1,20 @@
 ---
 banner:
-  title: Sahaj Spirit - A group of youth committed to bringing spontaneity into people's lives
-  content: At Sahaj Spirit Trust, we believe in the transformative power of youth-driven initiatives. Our mission is to provide a platform for young minds to organize and lead events that foster creativity, collaboration, and community well-being..
+  title: SAHAJ SUMMIT - 
+  desc: CHINTA SE BAS KARO! (चिन्त्यैवालम्)
+  content: Bringing Ease and Naturalness to People' Everyday Life .
   image: /images/DSC03791.JPG
   button:
-    label: "Contact Us"
+    label: "Buy Tickets Now"
     link: "/Bookings"
 
 # feature
 feature: 
-  title: Something You Need To Know
+  title: Introduction
   features:
-  - name: "Empowering Youth"
+  - name: "Opening Session"
     icon: "/images/code.svg"
-    content: "At Sahaj Spirit Trust, we nurture leadership skills and creative talents among youth, empowering them to bring about positive changes in society."
+    content: "Welcome address by the organizers. Introduction to the concept of Sahaj and its relevance in modern life."
   - name: "Community Events"
     icon: "/images/oop.svg"
     content: "We organize vibrant community events that inspire connection, growth, and social responsibility."
@@ -32,27 +33,30 @@ feature:
 
 # services
 services:
-  - title: "Driving Youth-Led Change Through Vibrant Initiatives"
+  - title: "Don't Miss the Day of 05 May 2024 SAHAJ SUMMIT"
     content: "Sahaj Spirit Trust provides young individuals with a platform to lead meaningful initiatives, paving the way for a brighter, more compassionate world. Through youth-led programs, we aim to cultivate leadership, responsibility, and empathy."   images:
-      - "/images/IMG_4097.JPG"
-      - "/images/IMG_4070.JPG"
-      - "/images/IMG_4083.JPG"
-      - "/images/IMG_4084.JPG"
-      - "/images/IMG_4086.JPG"
-      - "/images/IMG_4105.JPG"
-      - "/images/IMG_4099.JPG"  
-      - "/images/IMG_4089.JPG"
+      - "/images/img1.JPG"
+    
+      - "/images/img3.JPG"
+      - "/images/img4.JPG"
+  
+      - "/images/img6.JPG"
+      - "/images/img7.JPG"  
+      - "/images/img8.JPG"
+      - "/images/img9.JPG"
+      - "/images/img10.JPG"
     button:
       enable: true
-      label: Discover more
+      label: Buy Tickets Now
       link: /Bookings
 
   - title: "Equipping Youth With Tools for Success"
-    content: "Through tailored workshops, hands-on training, and creative learning opportunities, we empower the next generation with the skills they need to excel—both personally and professionally."    images: 
+    content: "Through tailored workshops, hands-on training, and creative learning opportunities, we empower the next generation with the skills they need to excel—both personally and professionally."    
+    images: 
       - "/images/IMG_4073.JPG"
     button:
       enable: true
-      label: Find out more
+      label: Buy Tickets Now
       link: /Bookings
   
   - title: "Celebrating Culture and Diversity"
@@ -65,7 +69,7 @@ services:
       - "/images/IMG_4148.JPG"
     button:
       enable: true
-      label: Check it out
+      label: Buy Tickets Now
       link: /Bookings
 
   - title: "Inspiring Change Through Volunteerism"
@@ -76,22 +80,22 @@ services:
       - "/images/IMG_4126.JPG"
     button:
       enable: true
-      label: Check it out
+      label: Buy Tickets Now
       link: /Bookings
 
 # workflow
 workflow: 
   title: "Experience the best  with us"
-  image: "/images/IMG_4143.JPG"
+  image: "/images/event.png"
   description: ""
 
 # call_to_action
 call_to_action:
-  title: Ready to get started?
+  title: Are You Ready? 
   content: At Sahaj Spirit Trust, we believe in the transformative power of youth-driven initiatives. Our mission is to provide a platform for young minds to organize and lead events that foster creativity, collaboration, and community well-being..
   image: '/images/cta.svg'
   button:
     enable: true
-    label: "Book Now"
+    label: "Buy Tickets Now"
     link: "/Bookings"
 ---
