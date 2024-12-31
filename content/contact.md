@@ -4,9 +4,9 @@ layout: "contact"
 draft: false
 info: 
   title: Why you should contact us!
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit recusandae voluptates doloremque veniam temporibus porro culpa ipsa, nisi soluta minima saepe laboriosam debitis nesciunt.
+  description: Connecting with us opens the door to meaningful opportunities. Whether you have questions, need support, or wish to collaborate, we're here to provide thoughtful and personalized assistance tailored to your needs. Reach out today!
   contacts: 
-    - "phone: +88 125 256 452"
-    - "Mail: [info@bigspring.com](mailto:info@bigspring.com)"
-    - "Address: 360 Main rd, Rio, Brazil"
+    - "phone: +91 9625229294"
+    - "Mail: [Sahajspiritteam@gmail.com](mailto:Sahajspiritteam@gmail.com)"
+    - "Address: C-99 Gali No.4 ,New Usmanpur, Delhi-110053"
 ---

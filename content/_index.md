@@ -88,7 +88,7 @@ workflow:
 # call_to_action
 call_to_action:
   title: Ready to get started?
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur.
+  content: At Sahaj Spirit Trust, we believe in the transformative power of youth-driven initiatives. Our mission is to provide a platform for young minds to organize and lead events that foster creativity, collaboration, and community well-being..
   image: '/images/cta.svg'
   button:
     enable: true
