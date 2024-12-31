@@ -8,6 +8,7 @@ import logo from '../../public/images/logo.png'
 function Bookings() {
   const [loading, setLoading] = useState(false);
   const [paymentLink, setPaymentLink] = useState(null);
+  const [seatType, setSeatType] = useState("Normal");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -31,6 +32,9 @@ function Bookings() {
     if (e.target.name === "gender") {
       gender = e.target.__reactProps$sb2tr2lwrue.value || "Male";
     }
+  };
+  const handleSeatChange = (e) => {
+    setSeatType(e.target.value);
   };
 
   const validateForm = () => {
@@ -73,7 +77,11 @@ function Bookings() {
     Object.entries(formData).forEach(([key, value]) => {
       data.append(key, value);
     });
-    data.append("amount", 2500);
+    if(seatType==="Normal"){
+    data.append("amount", 499);
+    }else if(seatType==="Premium"){
+      data.append("amount", 5100); 
+    }
     data.append("ref_id", ref_id);
     data.append("gender", gender);
 
@@ -138,7 +146,7 @@ function Bookings() {
               height={100}
               alt='logo'
               
-              className='mx-auto'
+              className='mx-auto rounded-full'
               />
               <div className='bg-slate-50/90 p-5 rounded-xl m-3 hover:hover:scale-110  transition-transform ease-in-out '>
 
@@ -197,6 +205,38 @@ function Bookings() {
                   <option>Prefer Not to say</option>
                 </select>
               </div>
+              <div className="mb-5">
+                <label className="block mb-2 text-sm font-medium text-gray-900">
+                  Select Seat Type
+                </label>
+                <div className="flex items-center gap-6">
+                  <label className="flex items-center">
+                    <input
+                      type="radio"
+                      value="Normal"
+                      name="seatType"
+                      checked={seatType === "Normal"}
+                      onChange={handleSeatChange}
+                      className="text-emerald-500 focus:ring-emerald-500"
+                    />
+                    <span className="ml-2 text-sm text-gray-900">Normal (₹ 499)</span>
+                  </label>
+                  <label className="flex items-center">
+                    <input
+                      type="radio"
+                      value="Premium"
+                      name="seatType"
+                      checked={seatType === "Premium"}
+                      onChange={handleSeatChange}
+                      className="text-emerald-500 focus:ring-emerald-500"
+                    />
+                    <span className="ml-2 text-sm text-gray-900">
+                      Premium (₹ 5100 for 2 people)
+                    </span>
+                  </label>
+                </div>
+                </div>
+
               <button
                 type="submit"
                 disabled={loading}
