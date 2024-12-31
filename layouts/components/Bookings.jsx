@@ -163,9 +163,9 @@ function Bookings() {
               </span>
             </p>
 
-              <p className="mt-2 text-sm lg:text-xl font-bold text-emerald-500">Event duration :<span className='text-orange-400  text-sm font-black lg:text-2xl'>&nbsp; 6hrs 1-7PM</span></p>
+              <p className="mt-2 text-sm lg:text-xl font-bold text-emerald-500">Event duration :<span className='text-orange-400  text-sm font-black lg:text-2xl'>&nbsp; 6hrs (1-7PM)</span></p>
               <p className="mt-2 text-sm lg:text-xl font-bold text-emerald-500">Day :<span className='text-orange-400 font-black   text-sm lg:text-2xl'>&nbsp; Sunday</span></p>
-              <p className="mt-2 text-sm lg:text-xl font-bold text-emerald-500">Date :<span className='text-orange-400 font-black text-sm lg:text-2xl'>&nbsp; 27 Feb 2025</span></p>
+              <p className="mt-2 text-sm lg:text-xl font-bold text-emerald-500">Date :<span className='text-orange-400 font-black text-sm lg:text-2xl'>&nbsp; 23 Feb 2025</span></p>
               <p className="mt-2 text-sm lg:text-xl font-bold  text-emerald-500">Venue :<span className='text-orange-400 font-black  text-sm lg:text-2xl'>&nbsp;Satya Sai auditorium, Lodhi Rd, Pragati Vihar, New Delhi, Delhi 110003</span></p>
               </div>
               </div>
@@ -219,7 +219,7 @@ function Bookings() {
                       onChange={handleSeatChange}
                       className="text-emerald-500 focus:ring-emerald-500"
                     />
-                    <span className="ml-2 text-sm text-gray-900">Normal (₹ 499)</span>
+                    <span className="ml-2 text-sm text-gray-900">Normal Seats (₹ 499)</span>
                   </label>
                   <label className="flex items-center">
                     <input
@@ -231,7 +231,7 @@ function Bookings() {
                       className="text-emerald-500 focus:ring-emerald-500"
                     />
                     <span className="ml-2 text-sm text-gray-900">
-                      Premium (₹ 5100 for 2 people)
+                      Premium Seats (₹ 5100 for 2 people)
                     </span>
                   </label>
                 </div>

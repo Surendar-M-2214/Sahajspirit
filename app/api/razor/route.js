@@ -2,8 +2,8 @@
 import Razorpay from 'razorpay';
 
 const razorpay = new Razorpay({
-  key_id:'rzp_test_ooDbo4fE9guQSO',
-  key_secret: 'VR27qWWcUDS52g41I35gUjpu',
+  key_id:'rzp_live_pFlvTQTDProq99',
+  key_secret: '4KnIcSMA0i4iiOzLUmZhwWnX',
 });
 
 export async function POST(req) {
@@ -23,7 +23,7 @@ console.log(fname+" "+" "+gender+" "+amount)
     const paymentLink =  await razorpay.paymentLink.create({
       amount: amount * 100, // amount in paise (e.g., 100 INR = 10000 paise)
       currency: 'INR',
-      description: 'Order',
+      description: ' Sahaj Summit Event',
      customer: {
     name: name,
     

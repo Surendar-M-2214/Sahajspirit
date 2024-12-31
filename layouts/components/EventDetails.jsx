@@ -24,7 +24,7 @@ const EventDetails = () => {
               <strong>Day:</strong> Sunday
             </p>
             <p>
-              <strong>Date:</strong> 27th February 2025
+              <strong>Date:</strong> 23rd February 2025
             </p>
             <p>
               <strong>Venue:</strong> Satya Sai Auditorium, Lodhi Rd, Pragati
