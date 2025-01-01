@@ -32,9 +32,6 @@ console.log("in if")
                 "Payment_ID":payment_id,
                
             },
-            "skip_workflow": [
-                "form_workflow"
-            ],
             "result": {
                 "fields": [
                     "ID",
@@ -50,12 +47,16 @@ console.log("in if")
         }
         
         try {
-            let response = fetch("https://www.zohoapis.in/creator/v2.1/data/sahajspiritteam17/sahajspirit/report/All_Registrations", {
+            fetch("https://www.zohoapis.in/creator/v2.1/data/sahajspiritteam17/sahajspirit/report/All_Registrations", {
                 method: "PATCH",
                 headers: api_headers,
                 body: JSON.stringify(payload)
             })
-            console.log((await response).json())
+          .then(async (res)=>{
+            const det=await res.json();
+           console.log(JSON.stringify(det)
+           )
+          })
            
         }
         catch (exception) {
@@ -65,8 +66,32 @@ console.log("in if")
         
     
         // Example: Save the user details and payment information to an Excel file or DB
-    
-        return new Response(JSON.stringify({ success: true, message: 'Payment successful!' }), { status: 200 });
+        const successHTML = `
+        <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Payment Success</title>
+            <script src="https://cdn.tailwindcss.com"></script>
+          </head>
+          <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+            <div class="bg-white shadow-lg rounded-lg p-6 max-w-md text-center">
+              <h1 class="text-2xl font-bold text-green-600 mb-4">Payment Successful!</h1>
+              <p class="text-lg text-gray-700 mb-2">Confirmation email has been sent to you.</p>
+              <p class="text-lg text-gray-700 mb-4">You will be notified on WhatsApp shortly.</p>
+              <p class="text-lg text-gray-700 font-medium">आपको पुष्टिकरण ईमेल भेज दिया गया है।</p>
+              <p class="text-lg text-gray-700 mb-6 font-medium">आपको जल्द ही व्हाट्सएप पर सूचित कर दिया जाएगा।</p>
+              <div class="text-sm text-gray-500">Thank you for choosing Sahaj Spirit Trust.</div>
+            </div>
+          </body>
+        </html>
+      `;
+  
+      return new Response(successHTML, {
+        headers: { 'Content-Type': 'text/html' },
+      });
+  
       } catch (error) {
         console.error('Error processing payment:', error);
         return new Response(JSON.stringify({ success: false, message: 'Payment verification failed' }), { status: 500 });

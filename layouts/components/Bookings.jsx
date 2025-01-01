@@ -98,7 +98,7 @@ function Bookings() {
     // data.forEach((e)=>{
     //   console.dir(JSON.stringify(e))
     // })
-
+    setLoading(true);
     fetch(formURL, {
       mode: 'cors',
       method: "POST",
@@ -132,28 +132,30 @@ function Bookings() {
       })),
     };
         
-          fetch(`api/creator`, {
-          mode: 'cors',
-          method: "POST",
-          body:JSON.stringify( data),
-          headers: {
-            'accept': 'application/json',
-            'Access-Control-Allow-Origin':'*'
-          }
-        }
-        ).then(async(rec)=>{
-          setLoading(true);
-          const creator_resp= await rec.json()
-          console.log(JSON.stringify(creator_resp,null,2))
-          return creator_resp.result[0].data.ID
-        })
+         
         
         if (det?.link) {
+          fetch(`api/creator`, {
+            mode: 'cors',
+            method: "POST",
+            body:JSON.stringify( data),
+            headers: {
+              'accept': 'application/json',
+              'Access-Control-Allow-Origin':'*'
+            }
+          }
+          ).then(async(rec)=>{
+            
+            const creator_resp= await rec.json()
+            console.log(JSON.stringify(creator_resp,null,2))
+            return creator_resp.result[0].data.ID
+          })
           window.location.href = det.link;
         
         } else {
-          setLoading(false);
+          
           alert('Error generating payment link');
+          setLoading(false);
         }
       })
       .catch((error) => {
