@@ -61,7 +61,16 @@ workflow:
 call_to_action:
   title: Are You Ready? Then 👇 
   content: At Sahaj Spirit Trust, we believe in the transformative power of youth-driven initiatives. Our mission is to provide a platform for young minds to organize and lead events that foster creativity, collaboration, and community well-being..
-  image: '/images/img3.JPG'
+  images:
+    
+      - "/images/pic1.jpeg"
+      - "/images/pic2.jpeg"
+      - "/images/pic3.jpeg"
+      - "/images/pic4.jpeg"  
+      - "/images/pic5.jpeg"
+      - "/images/pic6.jpeg"
+      - "/images/pic7.jpeg"
+      - "/images/pic8.jpeg"
   button:
     enable: true
     label: "Buy Tickets Now"

@@ -1,20 +1,38 @@
+"use client"
+
 import { markdownify } from "@lib/utils/textConverter";
 import Image from "next/image";
 import Link from "next/link";
-
+import { Autoplay, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper.min.css";
 function Cta({ cta }) {
   return (
     <section className="section px-4">
       <div className="section container rounded-xl shadow">
         <div className="row  mx-auto items-center justify-center">
           <div className="md:col-5 lg:col-4">
-            <Image
-              className="w-full rounded-2xl"
-              src={cta?.image}
-              alt="call to action image"
-              width={325}
-              height={206}
-            />
+            
+               <div className={`service-carousel w-auto `}>
+                          <Swiper
+                            modules={[Autoplay, Pagination]}
+                            pagination={
+                              cta?.images.length > 1 ? { clickable: true } : false
+                            }
+                            autoplay={{
+                              delay: 5000,
+                              disableOnInteraction: false,
+                            }}
+                            
+                          >
+                            {/* Slides */}
+                            {cta?.images.map((slide, index) => (
+                              <SwiperSlide key={index} >
+                                <Image className="rounded-xl mb-5" src={slide} alt="" width={550} height={50} />
+                              </SwiperSlide>
+                            ))}
+                          </Swiper>
+                        </div>
           </div>
           <div className="mt-5 text-center md:col-6 lg:col-5 md:mt-0 md:text-left">
             <h2>{cta?.title}</h2>
