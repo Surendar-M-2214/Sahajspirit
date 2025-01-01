@@ -50,39 +50,7 @@ services:
       label: Buy Tickets Now
       link: /Bookings
 
-  - title: "Equipping Youth With Tools for Success"
-    content: "Through tailored workshops, hands-on training, and creative learning opportunities, we empower the next generation with the skills they need to excel—both personally and professionally."    
-    images: 
-      - "/images/IMG_4073.JPG"
-    button:
-      enable: true
-      label: Buy Tickets Now
-      link: /Bookings
-  
-  - title: "Celebrating Culture and Diversity"
-    content: "Our cultural events celebrate the richness of traditions and talents across communities, building bridges of understanding and appreciation for diversity"  
-    images:
-      - "/images/IMG_4253.JPG"
-      - "/images/IMG_4507.JPG"
-      - "/images/IMG_4533.JPG"
-      - "/images/IMG_4312.JPG"
-      - "/images/IMG_4148.JPG"
-    button:
-      enable: true
-      label: Buy Tickets Now
-      link: /Bookings
-
-  - title: "Inspiring Change Through Volunteerism"
-    content: "Sahaj Spirit Trust encourages youth to step forward and make a difference. Our volunteer programs provide the perfect opportunity to give back to society while developing valuable skills and meaningful connections."    
-    images:
-      - "/images/IMG_4154.JPG"
-      - "/images/IMG_4129.JPG"
-      - "/images/IMG_4126.JPG"
-    button:
-      enable: true
-      label: Buy Tickets Now
-      link: /Bookings
-
+ 
 # workflow
 workflow: 
   title: "Experience the best  with us"
@@ -91,9 +59,9 @@ workflow:
 
 # call_to_action
 call_to_action:
-  title: Are You Ready? 
+  title: Are You Ready? Then 👇 
   content: At Sahaj Spirit Trust, we believe in the transformative power of youth-driven initiatives. Our mission is to provide a platform for young minds to organize and lead events that foster creativity, collaboration, and community well-being..
-  image: '/images/cta.svg'
+  image: '/images/img3.JPG'
   button:
     enable: true
     label: "Buy Tickets Now"

@@ -181,26 +181,7 @@ function Bookings() {
               
               className='mx-auto rounded-full'
               />
-              <div className='bg-slate-50/90 p-5 rounded-xl m-3 hover:hover:scale-110  transition-transform ease-in-out '>
-
-            <p className="mt-2 text-sm lg:text-xl font-bold text-emerald-500">
-              Event Name :
-              <span className='text-orange-400 font-black text-sm lg:text-2xl'>
-                &nbsp; SAHAJ SUMMIT
-              </span>
-            </p>
-            <p className="mt-2 text-sm lg:text-xl font-bold text-emerald-500">
-              Event organizers :
-              <span className='text-orange-400 text-sm font-black lg:text-2xl'>
-                &nbsp; SAHAJ SPIRIT
-              </span>
-            </p>
-
-              <p className="mt-2 text-sm lg:text-xl font-bold text-emerald-500">Event duration :<span className='text-orange-400  text-sm font-black lg:text-2xl'>&nbsp; 6hrs (1-7PM)</span></p>
-              <p className="mt-2 text-sm lg:text-xl font-bold text-emerald-500">Day :<span className='text-orange-400 font-black   text-sm lg:text-2xl'>&nbsp; Sunday</span></p>
-              <p className="mt-2 text-sm lg:text-xl font-bold text-emerald-500">Date :<span className='text-orange-400 font-black text-sm lg:text-2xl'>&nbsp; 23 Feb 2025</span></p>
-              <p className="mt-2 text-sm lg:text-xl font-bold  text-emerald-500">Venue :<span className='text-orange-400 font-black  text-sm lg:text-2xl'>&nbsp;Satya Sai auditorium, Lodhi Rd, Pragati Vihar, New Delhi, Delhi 110003</span></p>
-              </div>
+              
               </div>
             {/* Add other event details */}
             <img className="absolute top-0 left-0 -z-10 h-full w-full object-cover" src="https://images.unsplash.com/photo-1504672281656-e4981d70414b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
@@ -218,7 +199,7 @@ function Bookings() {
                   onChange={handleSeatChange}
                   className="text-emerald-500 focus:ring-emerald-500"
                 />
-                <span className="ml-2 text-sm text-gray-900">Normal Seats (₹ 499)</span>
+                <span className="ml-2 text-sm text-gray-900"> Standard ticket (₹ 499)</span>
               </label>
               <label className="flex items-center">
                 <input
@@ -230,7 +211,7 @@ function Bookings() {
                   className="text-emerald-500 focus:ring-emerald-500"
                 />
                 <span className="ml-2 text-sm text-gray-900">
-                  Premium Seats (₹ 5100 for 2 people)
+                Pillar of sahaj summit (₹ 5100 for 2 people)
                 </span>
               </label>
             </div>

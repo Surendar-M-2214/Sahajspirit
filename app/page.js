@@ -28,7 +28,7 @@ const Home = async () => {
       <Services services={services} />
 
       {/* workflow */}
-      <Workflow workflow={workflow} />
+      {/* <Workflow workflow={workflow} /> */}
 
       {/* Cta */}
       <Cta cta={call_to_action} />
