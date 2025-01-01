@@ -92,7 +92,18 @@ const Social = ({ source, className }) => {
         </li>
       )}
      
-     
+     {youtube && (
+        <li className="inline-block">
+          <a
+            aria-label="instagram"
+            href={youtube}
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            <IoLogoYoutube />
+          </a>
+        </li>
+      )}
    
 
 
