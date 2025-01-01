@@ -17,7 +17,7 @@ function Cta({ cta }) {
                           <Swiper
                             modules={[Autoplay, Pagination]}
                             pagination={
-                              cta?.images.length > 1 ? { clickable: true } : false
+                              cta?.images > 1 ? { clickable: true } : false
                             }
                             autoplay={{
                               delay: 5000,
