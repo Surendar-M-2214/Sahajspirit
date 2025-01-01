@@ -60,7 +60,7 @@ workflow:
 # call_to_action
 call_to_action:
   title: Are You Ready? Then 👇 
-  content: At Sahaj Spirit Trust, we believe in the transformative power of youth-driven initiatives. Our mission is to provide a platform for young minds to organize and lead events that foster creativity, collaboration, and community well-being..
+  content: At Sahaj Spirit, we believe in the transformative power of youth-driven initiatives. Our mission is to provide a platform for young minds to organize and lead events that foster creativity, collaboration, and community well-being..
   images:
     
       - "/images/pic1.jpeg"
