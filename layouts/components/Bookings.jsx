@@ -113,7 +113,7 @@ function Bookings() {
 
  
       const  pay_id=det.id;
-     
+      const amt = seatType === 'Normal' ? 499 : 2550;
          const data = {
       data: ['person1', ...(seatType === 'Premium' ? ['person2'] : [])].map((person) => ({
         Reference_id: ref_id,
@@ -126,7 +126,7 @@ function Bookings() {
         Gender: formData[person].gender,
         FName: formData[person].fname,
         Payment_Status: "Pending",
-        Paid_Amount: amount,
+        Paid_Amount: amt,
         Payment_Link_ID: pay_id,
          // Placeholder for payment link ID
       })),
