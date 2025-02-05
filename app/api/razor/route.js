@@ -38,7 +38,7 @@ console.log(formData)
         email: true,
         whatsapp:true
       },
-      callback_url: `${process.env.BASE_URL}/api/payment-success`,
+      callback_url: `https://sahajspirit.vercel.app/api/payment-success`,
   callback_method: "get"
     });
 console.log( paymentLink.id);
